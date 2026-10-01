@@ -38,6 +38,9 @@
         <!-- Give the SVG a size so shapes can be seen -->
         <svg width="300" height="150"></svg>
 
+        <!-- NEW: Container for T04-3 chart -->
+        <div class="responsive-svg-container"></div>
+
     <!--Footer-->
     <footer class="footer">
         <p>&copy; 2026 Filicia Jing Xuan WONG | Built with assistance from GenAI for starter code/content</p>
@@ -45,9 +48,13 @@
 
     <script src="script.js"></script>
      <!-- Load D3 first, then your D3 code file -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="energy-d3.js"></script>
 
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- NEW: JS for T04-3 only -->
+    <script src="t04-3-bars.js"></script>
+    <!-- Old T04-2 demo (temporarily disabled) -->
+    <!-- <script src="energy-d3.js"></script> -->
 </body>
 </html>
 

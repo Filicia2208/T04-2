@@ -305,3 +305,10 @@ body {
         padding: 20px;
     }
 }
+
+/*to make svg container responsive to changes in screen size and window width*/
+.responsive-svg-container {
+margin: 0 auto; /* center */
+width: 100%; /* fill parent width */
+max-width: 1200px; /* cap max width */
+}
