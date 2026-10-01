@@ -19,6 +19,7 @@
 <body data-page="home">
     
     <header class="website_header">
+        
         <!--PowerIcon Logo-->
         <a class="powericon_logo_link" href="index.html" title="Return to Homepage">
             <img src="images/PowerIcon.png" alt="PowerIcon" class="powericon_logo">
@@ -32,49 +33,10 @@
         </nav>
     </header>
 
-    <!--Homepage Content-->
-    <main class="container">
-        <section class="section_container">
-
-            <p class="homepage_statement">APPLIANCE ENERGY CONSUMPTION | AUSTRALIA</p>
-
-            <h1>Appliance Energy Consumption in Australia</h1>
-
-            <p class="homepage_statement_intro">
-                This website provides a brief introduction to the household appliance energy consumption
-                in the Australian market, mainly focusing on televesion energy data.
-            </p>
-
-        </section>
-
-        <!--Information Cards-->
-        <div class="info_card_grid">
-
-            <!--Card 1-->
-            <article class="info_card">
-                <div class="card_order">01</div>
-                <h2>Energy Labels</h2>
-                <p>Australian energy labels help consumers compare the energy efficiency
-                        of appliances at a glance.</p>
-            </article>
-
-            <!--Card 2-->
-            <article class="info_card">
-                    <div class="card_order">02</div>
-                    <h2>Screen Size Matters</h2>
-                    <p>Television size, technology and settings can influence electricity consumption.</p>
-            </article>
-
-            <!--Card 3-->
-            <article class="info_card">
-                    <div class="card_order">03</div>
-                    <h2>Data-Driven Choices</h2>
-                    <p>The Television page explores patterns in Australian television
-                        energy data using visualisations.</p>
-            </article>
-
-        </div>
-    </main>
+        <h1>Appliance Energy Consumption</h1>
+        <div id="content"></div>
+        <!-- Give the SVG a size so shapes can be seen -->
+        <svg width="300" height="150"></svg>
 
     <!--Footer-->
     <footer class="footer">
@@ -82,6 +44,9 @@
     </footer>
 
     <script src="script.js"></script>
+     <!-- Load D3 first, then your D3 code file -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="energy-d3.js"></script>
 
 </body>
 </html>
